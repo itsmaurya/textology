@@ -21,7 +21,7 @@ function App() {
     })
     setTimeout(() => {
       setAlert(null)
-    }, 1500);
+    }, 1000);
 
   }
 
@@ -41,7 +41,7 @@ function App() {
   return (
     <>
       {/* <BrowserRouter> */}
-        <Navbar title="Textiology" mode={mode} toggleMode={toggleMode} />
+        <Navbar title="Textology" mode={mode} toggleMode={toggleMode} />
         <Alert alert={alert} />
         <div className="container my-3">
 
