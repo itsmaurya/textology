@@ -3,11 +3,11 @@ import './App.css';
 
 import Navbar from './components/Navbar';
 import TextForm from './components/TextForm';
-// import About from './components/About';
+import About from './components/About';
 import { useState } from 'react';
 import Alert from './components/Alert';
 import React from "react";
-// import { BrowserRouter , Route,Routes } from 'react-router-dom'
+import { BrowserRouter , Route,Routes } from 'react-router-dom'
 
 
 function App() {
@@ -40,20 +40,20 @@ function App() {
   }
   return (
     <>
-      {/* <BrowserRouter> */}
+      <BrowserRouter>
         <Navbar title="Textology" mode={mode} toggleMode={toggleMode} />
         <Alert alert={alert} />
         <div className="container my-3">
 
-        <TextForm showAlert={showAlert} heading="ENTER YOUR TEXT TO MANIPULATE" mode={mode} />
+        {/* <TextForm showAlert={showAlert} heading="ENTER YOUR TEXT TO MANIPULATE" mode={mode} /> */}
 
-          {/* <Routes>
-            <Route path="/" element={<TextForm showAlert={showAlert} heading="Enter Text to analyze" mode={mode} />}> </Route>
-            <Route path="/about" element={<About />}></Route>
-          </Routes> */}
+          <Routes>
+            <Route path="/" element={<TextForm showAlert={showAlert} heading="ENTER YOUR TEXT TO MANIPULATE" mode={mode} />}> </Route>
+            <Route path="/about" element={<About mode={mode} />}></Route>
+          </Routes>
 
         </div>
-      {/* </BrowserRouter> */}
+      </BrowserRouter> 
     </>
   );
 }
