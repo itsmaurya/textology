@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Created a React App
 
 #project  is created using React,JS, HTML , CSS 
 #its a text manipulator , where  you can change your text in some other forms.
